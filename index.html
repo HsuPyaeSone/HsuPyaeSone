@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="scrollTop" id="scrolltop" onclick="scrollToTop();"><v-icon style="left: 7px; top: 9px; font-size: 30px;
+      color: #D7CEC7;">mdi-arrow-up-circle</v-icon></div> */
+    <v-app>
+      <v-main>
+        
+        <v-app-bar fixed class="topbar" elevation="4">
+          <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+
+          <v-toolbar-title>
+            <h1 class="">
+              <span>Hsu Pyae Sone</span>
+            </h1>
+          </v-toolbar-title>
+
+          <v-spacer></v-spacer>
+
+          <nav id="myDIV">
+            <div class="container" >
+              <ul>
+                <li class="nav home"><a href="#home">Home</a></li>
+                <li class="nav about"><a href="#about">About</a></li>
+                <li class="nav projects"><a href="#projects">Projects</a></li>
+                <li class="nav contact"><a href="#experience">Experience</a></li>
+                <li class="nav"><a href="tel:+959 250 104 566">+959 250 104 566</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- <v-btn depressed
+        :key="index"
+        @click="scroll"
+        :style="{'background-color': activeButton === index + 1 ? color : ''}"
+        v-for="(item, name) in navbar">
+          {{ item.name }}
+        </v-btn> -->
+        </v-app-bar>
+        <!-- end of Topbar -->
+        <section id="home">
+          <v-container fluid >
+            <v-row>
+              <v-col cols="12" lg="6" md="6" class="pa-5 top-sec align-self-center">
+                <v-card class="ml-8">
+                  <v-card-title class="pa-6">
+                    <h1>Hi! I'M <span>Hsu Pyae Sone</span></h1>
+                    <h3 class="pt-2"> I AM A <Span>WEB</Span> DEVELOPER</h3>
+                    <p class="pt-4" style="text-align: justify;">
+                      Creative and dependable Entry Level Web Developer with an excellent work ethic. Knowledgeable in a wide variety of computer languages as well as the principles and techniques of website construction and maintenance. Skilled in conceptualizing, designing, developing, and deploying software including mathematical and logical solutions to business issues.</p>
+                  </v-card-title>
+  
+                  <v-card-actions class="pa-6">
+                    <v-btn class="mx-4" icon>
+                      <a href="https://www.youtube.com/" class="footer-icon">
+                        <v-icon size="24px">
+                        mdi-git
+                        </v-icon>
+                      </a>
+                    </v-btn>
+                    <v-btn class="mx-4" icon>
+                      <a href="https://www.youtube.com/" class="footer-icon">
+                        <v-icon size="24px">
+                        mdi-facebook
+                        </v-icon>
+                      </a>
+                    </v-btn>
+                    <v-btn class="mx-4" icon>
+                      <a href="https://www.youtube.com/" class="footer-icon">
+                        <v-icon size="24px">
+                        mdi-gmail
+                        </v-icon>
+                      </a>
+                    </v-btn>
+                    <v-btn class="mx-4" icon>
+                      <a href="https://www.youtube.com/" class="footer-icon">
+                        <v-icon size="24px">
+                        mdi-linkedin
+                        </v-icon>
+                      </a>
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+                
+  
+              </v-col>
+              <v-col cols="12" sm="12" md="6" lg="6" class="hidden-sm-and-down">
+                <v-img class="img-intersection" src="assets/hps-banner-photo.png" />
+              </v-col>
+            </v-row>
+          </v-container>
+        </section>
+        
+
+        <!-- about me -->
+        <section id="about">
+          <v-container fluid class="about-me">
+            <v-row>
+              <v-col cols="12" sm="12" md="6" lg="6" class="hidden-sm-and-down">
+                <v-img class="img-intersection" src="assets/hps-banner-photo.png" />
+              </v-col>
+              <v-col cols="12" lg="6" md="6" class="pa-5 align-self-center">
+                <v-sheet d-flex rounded class="abt" elevation="0">About Me</v-sheet>
+  
+                <v-card flat>
+                  <v-card-title class="mt-5">
+                    <h1>Things about me</h1>
+                  </v-card-title>
+                  <v-card-text style="text-align: justify; padding-right: 60px;">
+                    Currently, I am working at Veva Trading Co.,Ltd as a WordPress Developer. Aside form coding, I love to play game and explore the nature.
+                  </v-card-text>
+  
+                  <v-card-actions>
+                    <v-btn class="text-capitalize white--text reset-btn rounded-pill">
+                     <a download="Hps" class="white--text" href="./assets/SoneHsuPyae_CV.pdf"><v-icon class="mr-2">mdi-download-circle-outline</v-icon> Download CV</a> 
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </section>
+        
+        <!-- end of about me -->
+
+        <!-- projects -->
+        <section id="projects"> 
+          <v-container fluid >
+            <v-row>
+              <v-col cols="6" style="text-align: center; margin: auto;">
+                <h1>My Latest Featured <span>Projects</span></h1>
+                <p>These are the websites that I created from design to coding. </p>
+              </v-col>
+            </v-row>
+            <v-row class="project_list">
+              <v-col v-for="item in items" class="d-flex child-flex" cols="4">
+                <figure class="snip1543">
+                <v-img :src="item.img" class="project-img"></v-img>
+                  <figcaption>
+                    <h3>{{item.title}}</h3>
+                  </figcaption>
+                  <a :href="item.link"></a>
+                </figure>
+              </v-col>
+            </v-row>
+          </v-container>
+        </section>
+        
+        <!-- end of projects -->
+
+        <!-- experience -->
+        <section id="experience">
+          <v-container fluid class="experience">
+            <v-row>
+              <v-col cols="6" style="text-align: center; margin: auto;">
+                <h3>Qualification</h3>
+                <h1 class="text-decoration-underline">My <span>Experience</span></h1>
+              </v-col>
+  
+              <v-container>
+                <template>
+                  <v-timeline>
+                    <v-timeline-item v-for="(year, i) in years" :key="i" :color="year.color" small>
+                      <template v-slot:opposite>
+                        <span :class="`headline font-weight-bold ${year.color}--text`" v-text="year.year"></span>
+                      </template>
+                      <div class="py-4">
+                        <h2 :class="`headline font-weight-light mb-4 ${year.color}--text`">
+                          {{year.title}}
+                        </h2>
+                        <div>
+                          {{year.desc}}
+                        </div>
+                      </div>
+                    </v-timeline-item>
+                  </v-timeline>
+                </template>
+              </v-container>
+          </v-container>
+        </section>
+        
+        <!-- end of experience -->
+
+        <!-- footer  -->
+        <template>
+          <v-card-text  class="white--text footer_bot text-center">
+            {{ new Date().getFullYear() }} — <strong>Hsu Pyae Sone</strong>
+          </v-card-text>
+        </template>
+        <!-- end of footer -->
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+
+    // scroll to top
+    window.addEventListener('scroll', function(){
+    var scroll=this.document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", this.window.scrollY >500);
+  })
+  function scrollToTop(){
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
+  // end of scroll to top
+
+  // navbar active
+  const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+    // end of navbar
+
+   
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+
+      data: () => ({
+        navbar: [{
+            name: 'Home',
+            id: 'home',
+          },
+          {
+            name: 'About Me',
+            id: 'aboutme',
+          },
+          {
+            name: 'Experience',
+            id: 'experience'
+          },
+          {
+            name: 'Projects',
+            id: 'projects'
+          },
+          {
+            name: 'Contact Me',
+            id: 'contact'
+          }
+        ],
+        years: [{
+            title: 'Veva Trading Co.,Ltd',
+            desc: "WordPress Developer",
+            color: 'cyan',
+            year: '01/11/2021-current',
+          },
+          {
+            title: 'Neptunemm Company',
+            desc: "Wed Developer Intern",
+            color: 'green',
+            year: '01/07/2021-01/10/2021',
+          },
+          
+        ],
+        items:[
+          {
+            img: "./assets/project5.png",
+            title: "Citta Consultancy",
+            link: "https://cittaconsultancy.com/"
+          },
+          {
+            img: "./assets/project6.png",
+            title: "SCH",
+            link: "https://schmyanmar.org/"
+          },
+          {
+            img: "./assets/project4.png",
+            title: "Organic Argoland",
+            link: "https://organicagroland.com/"
+          },
+          {
+            img: "./assets/theme4.png",
+            title: "MentalHealth",
+            link: "#"
+          },
+          {
+            img: "./assets/project2.png",
+            title: "Nex4",
+            link: "#"
+          },
+          {
+            img: "./assets/project3.png",
+            title: "Ocean Gate",
+            link: "#"
+          },
+          
+        ]
+      }),
+    })
+  </script>
+</body>
+
+</html>
